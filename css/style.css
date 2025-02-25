@@ -1,0 +1,263 @@
+/* 🎨 COLOR VARIABLES */
+:root {
+    --green: #0B6E4F;
+    --pink: #FF4F79;
+    --charcoal: #2E2E2E;
+    --white: #FDFDFD;
+}
+
+/* 🎉 GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--charcoal);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+/* 🌈 NAVIGATION BAR */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--charcoal);
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+}
+
+/* 🌟 HERO SECTION */
+.hero {
+    background: linear-gradient(to right, var(--green), var(--charcoal));
+    color: var(--white);
+    padding: 8rem 2rem;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.hero-buttons a {
+    background-color: var(--pink);
+    padding: 1rem 2.5rem;
+    margin: 0 1rem;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.hero-buttons a:hover {
+    background-color: var(--charcoal);
+    transform: scale(1.05);
+}
+
+
+/* 📸 GALLERY SECTION */
+#gallery {
+    padding: 4rem 2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding-top: 2rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* 📜 ABOUT ME SECTION */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: var(--pink);
+    margin-top: 2rem;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* 🍪 BAKING BLOG SECTION */
+.baking-section {
+    padding: 4rem 2rem;
+}
+
+.baking-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* 📝 RESUME PAGE */
+.resume-section {
+    padding: 4rem 2rem;
+}
+
+.resume-section a {
+    display: inline-block;
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.resume-section a:hover {
+    background-color: var(--green);
+}
+
+/* 📬 CONTACT SECTION */
+#contact {
+    padding: 4rem 2rem;
+    background-color: var(--charcoal);
+    color: var(--white);
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--green);
+}
+
+/* ⚡ FOOTER */
+footer {
+    background-color: var(--charcoal);
+    color: var(--white);
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--pink);
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: var(--green);
+}
+
+/* 🌈 NAVIGATION BAR */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--charcoal);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+}
+
+/* 🎞️ GALLERY GRID */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}

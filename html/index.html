@@ -1,26 +1,44 @@
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megan Dowdell | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- ✅ Corrected CSS path -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ✅ Corrected JS path with defer -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="baking.html">Baking Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
         <h1>Hey, I’m Megan 🚀</h1>
-        <p>Math + CS | Photographer | Car Enthusiast | Baker</p>
-        <a href="#gallery" class="button">Explore My Gallery</a>
+        <p>Math + CS student | Photographer 📸 | Baker 🍪 | Car Enthusiast 🏎️</p>
+        <div class="hero-buttons">
+            <a href="about.html" class="button">About Me</a>
+            <a href="gallery.html" class="button">Gallery</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="baking.html" class="button">Baking Blog</a>
+        </div>
     </header>
 
     <section id="gallery">
         <h2>Photography Highlights 📸</h2>
         <p>Cars, animals, sunsets, and more.</p>
         <div class="gallery-container">
-            <!-- Gallery photos will go here soon -->
+            <img src="images/gallery/sample1.jpg" alt="Sample Photo 1">
+            <img src="images/gallery/sample2.jpg" alt="Sample Photo 2">
+            <img src="images/gallery/sample3.jpg" alt="Sample Photo 3">
         </div>
     </section>
 
@@ -30,7 +48,5 @@
            <a href="https://instagram.com/YOUR-INSTA" target="_blank">Instagram</a>
         </p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
